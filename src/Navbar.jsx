@@ -1,15 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Icon from "./Icon";
 
 function Navbar() {
   return (
     <>
-      <div className="container-fluid nav_bg">
+      <div className="container-fluid nav_bg" style={{border: '2px solid red'}}>
         <div className="row">
           <div className="col-10 mx-auto">
             <nav className="navbar navbar-expand-lg">
               <NavLink className="navbar-brand" to="/">
-                GrowMore Inc.
+                <div style={{border: '1px solid red', paddingBottom: '-50%'}}>
+                <Icon />
+
+                </div>
               </NavLink>
               <button className="navbar-toggler" type="button">
                 <span className="navbar-toggler-icon"></span>
